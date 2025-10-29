@@ -38,3 +38,15 @@ Compila el ejecutable principal (`simulador`) desde la raíz del proyecto:
 
 ```bash
 make
+
+## Estructura del Código
+El código sigue la siguiente estructura mínima requerida para el proyecto:
+
+pendulos-acoplados-no-lineales/
+├── include/           # Cabeceras (.h) de clases (Pendulo.h, SistemaAcoplado.h)
+├── src/               # Implementación de clases y main.cpp
+├── scripts/           # Scripts de Gnuplot (.gp) y Python (.py)
+├── results/           # Archivos de salida (datos.dat, .png, .gif)
+├── documents/         # Análisis físico (LaTeX) y Diagrama de Flujo
+├── Makefile
+└── README.md          # Este archivo
