@@ -1,85 +1,21 @@
-# PÉNDULOS ACOPLADOS NO LINEALES
+PROYECTO: PÉNDULOS ACOPLADOS NO LINEALES
 
-## Título del Proyecto
+DESCRIPCIÓN:
+Simulación de péndulos acoplados con interacción no lineal cuadrática. El proyecto analiza la transferencia de energía y los modos de oscilación del sistema, resolviendo las EDOs acopladas.
 
-**`pendulos-acoplados-no-lineales`**
+EJECUCIÓN:
+El programa requiere la compilación previa con Make (make).
+Una vez compilado, se ejecuta usando el nombre del ejecutable:
 
-Simulación numérica de péndulos acoplados con interacción no lineal cuadrática. Este proyecto implementa la solución de las EDOs acopladas mediante un integrador numérico para analizar la transferencia de energía y los modos de oscilación del sistema.
+./pendulos
 
-***
+El programa solicitará interactivamente las condiciones iniciales y los parámetros de la simulación.
 
-## Ecuaciones del Sistema
-
-El sistema modela la dinámica angular $\theta_1$ y $\theta_2$ de dos péndulos bajo gravedad y acoplamiento cuadrático:
-
-* **Péndulo 1:** $\ddot{\theta}_1 + \frac{g}{l} \sin \theta_1 + \kappa(\theta_1 - \theta_2)^2 = 0$
-* **Péndulo 2:** $\ddot{\theta}_2 + \frac{g}{l} \sin \theta_2 + \kappa(\theta_2 - \theta_1)^2 = 0$
-
-***
-
-## Requisitos del Sistema
-
-Para compilar y ejecutar el proyecto, se necesita:
-
-1.  **Compilador C++:** Soporte para **C++17** (e.g., GCC/G++ v9.x o superior).
-2.  **Make:** Utilidad `make` para el proceso de compilación.
-3.  **Gnuplot:** Para la generación de gráficas estáticas (`.png`) y animaciones de espacio fase.
-4.  **Python 3:** Con la librería `matplotlib` para la animación física del movimiento.
-
-***
-
-## Estructura del Código
-El código sigue la siguiente estructura mínima requerida para el proyecto:
-
-pendulos-acoplados-no-lineales/
-├── include/           # Cabeceras (.h) de clases (Pendulo.h, SistemaAcoplado.h)
-├── src/               # Implementación de clases y main.cpp
-├── scripts/           # Scripts de Gnuplot (.gp) y Python (.py)
-├── results/           # Archivos de salida (datos.dat, .png, .gif)
-├── documents/         # Análisis físico (LaTeX) y Diagrama de Flujo
-├── Makefile
-└── README.md          # Este archivo
-
-## Compilación y Ejecución
-
-El proyecto utiliza un `Makefile` para automatizar la compilación, la ejecución de la simulación y la generación de gráficos.
-
-### 1. Compilación
-
-Compila el ejecutable principal (`simulador`) desde la raíz del proyecto:
-
-```bash
-make
-```
-2. Ejecución de la Simulación
-El ejecutable solicita interactivamente los parámetros de la simulación. La ejecución genera automáticamente el archivo de datos, las gráficas y las animaciones.
-
-```Bash
-
-./simulador
-``` 
-3. Limpieza
-Para eliminar los archivos objeto y el ejecutable:
-
-```Bash
-
-make clean
-```
-Reproducción de Figuras y Animaciones
-El ejecutable principal llama automáticamente a los scripts de la carpeta scripts/. Para regenerar solo los gráficos a partir de un archivo results/datos.dat existente:
-
-A. Gráficas Estáticas (Trayectorias, Energía)
-Ejecuta el script de Gnuplot:
-
-```Bash
-
-gnuplot scripts/plot_trayectorias.gp
-```
-B. Animación Física (Movimiento)
-Ejecuta el script de Python:
-
-```Bash
-
-python3 -u scripts/animacion_fisica.py
-```
-
+ESTRUCTURA DE CARPETAS MÍNIMA:
+include/           - Cabeceras (.h) de clases.
+src/               - Implementación de clases y main.cpp.
+scripts/           - Scripts de Gnuplot (.gp) y Python (.py) para gráficas y animaciones.
+results/           - Archivos de salida (datos.dat, .png, .gif).
+documents/         - Análisis físico (LaTeX) y Diagrama de Flujo.
+Makefile           - Archivo de compilación.
+README.md          - Este documento.
