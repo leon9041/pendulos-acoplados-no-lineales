@@ -28,17 +28,6 @@ Para compilar y ejecutar el proyecto, se necesita:
 
 ***
 
-## Compilación y Ejecución
-
-El proyecto utiliza un `Makefile` para automatizar la compilación, la ejecución de la simulación y la generación de gráficos.
-
-### 1. Compilación
-
-Compila el ejecutable principal (`simulador`) desde la raíz del proyecto:
-
-```bash
-make
-
 ## Estructura del Código
 El código sigue la siguiente estructura mínima requerida para el proyecto:
 
@@ -50,3 +39,47 @@ pendulos-acoplados-no-lineales/
 ├── documents/         # Análisis físico (LaTeX) y Diagrama de Flujo
 ├── Makefile
 └── README.md          # Este archivo
+
+## Compilación y Ejecución
+
+El proyecto utiliza un `Makefile` para automatizar la compilación, la ejecución de la simulación y la generación de gráficos.
+
+### 1. Compilación
+
+Compila el ejecutable principal (`simulador`) desde la raíz del proyecto:
+
+```bash
+make
+```
+2. Ejecución de la Simulación
+El ejecutable solicita interactivamente los parámetros de la simulación. La ejecución genera automáticamente el archivo de datos, las gráficas y las animaciones.
+
+```Bash
+
+./simulador
+``` 
+3. Limpieza
+Para eliminar los archivos objeto y el ejecutable:
+
+```Bash
+
+make clean
+```
+Reproducción de Figuras y Animaciones
+El ejecutable principal llama automáticamente a los scripts de la carpeta scripts/. Para regenerar solo los gráficos a partir de un archivo results/datos.dat existente:
+
+A. Gráficas Estáticas (Trayectorias, Energía)
+Ejecuta el script de Gnuplot:
+
+```Bash
+
+gnuplot scripts/plot_trayectorias.gp
+```
+B. Animación Física (Movimiento)
+Ejecuta el script de Python:
+
+```Bash
+
+python3 -u scripts/animacion_fisica.py
+```
+
