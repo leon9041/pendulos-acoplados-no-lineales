@@ -1,6 +1,6 @@
 /**
- * @file     TorpedoCarrito.cpp
- * @brief    Simulacion de persecucion entre un torpedo y un carrito en movimiento
+ * @file     SistemaAcoplado.cpp
+ * @brief    implementacion de poo en sistema acoplado
  * @author   Angie Gomez, Leonardo Tovar
  * @date     29/10/25
  * @version  1.0
