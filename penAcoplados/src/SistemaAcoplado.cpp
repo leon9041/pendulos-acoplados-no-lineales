@@ -1,3 +1,12 @@
+/**
+ * @file     TorpedoCarrito.cpp
+ * @brief    Simulacion de persecucion entre un torpedo y un carrito en movimiento
+ * @author   Angie Gomez, Leonardo Tovar
+ * @date     15/05/25
+ * @version  1.0
+ * @license  owner
+ */
+
 #include "SistemaAcoplado.h"
 #include <iostream>
 #include <filesystem>
