@@ -1,3 +1,11 @@
+/**
+ * @file     main.cpp
+ * @brief    implementacion de las clases pendulo y sistema acoplado más su almacenamiento
+ * @author   Angie Gomez, Leonardo Tovar
+ * @date     29/10/25
+ * @version  1.0
+ * @license  owner
+ */
 #include "SistemaAcoplado.h"
 #include <iostream>
 #include <exception>
