@@ -1,3 +1,11 @@
+/**
+ * @file     SistemaAcoplado.h
+ * @brief    Encabezados de la clase SistemaAcoplado
+ * @author   Angie Gomez, Leonardo Tovar
+ * @date     29/10/25
+ * @version  1.0
+ * @license  owner
+ */
 #ifndef SISTEMA_ACOPLADO_H
 #define SISTEMA_ACOPLADO_H
 
