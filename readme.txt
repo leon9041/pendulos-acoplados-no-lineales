@@ -14,8 +14,7 @@ El programa solicitará interactivamente las condiciones iniciales y los paráme
 ESTRUCTURA DE CARPETAS MÍNIMA:
 include/           - Cabeceras (.h) de clases.
 src/               - Implementación de clases y main.cpp.
-scripts/           - Scripts de Gnuplot (.gp) y Python (.py) para gráficas y animaciones.
+scripts/           - Scripts de Gnuplot (.gp) para gráficas y animaciones.
 results/           - Archivos de salida (datos.dat, .png, .gif).
-documents/         - Análisis físico (LaTeX) y Diagrama de Flujo.
 Makefile           - Archivo de compilación.
-README.md          - Este documento.
+
